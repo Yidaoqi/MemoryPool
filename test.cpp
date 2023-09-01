@@ -44,8 +44,8 @@
 #include "StackAlloc.h"
 
 /* Adjust these values depending on how much you trust your computer */
-#define ELEMS 1000000
-#define REPS 50
+constexpr auto ELEMS = 1000000;
+constexpr auto REPS = 50;
 
 int main()
 {
@@ -134,6 +134,6 @@ int main()
   std::cout << "MemoryPool still has a lot of uses though. Any type of tree"
             " and when you have multiple linked lists are some examples (they"
             " can all share the same memory pool).\n";
-
+  system("pause");
   return 0;
 }
